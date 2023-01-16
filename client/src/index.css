@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+@font-face {
+  font-family: 'copycat';
+  src: local('copycat'), url(./assets/fonts/copycat.woff) format('woff');
+}
+
+body {
+  margin: 0;
+  font-family: 'copycat', sans-serif;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.center {
+  text-align: center;
+}
+
+.t-16 {
+  font-size: 16px;
+}
+
+.t-24 {
+  font-size: 24px;
+}
+
+.t-32 {
+  font-size: 32px;
+}
+
+.t-48 {
+  font-size: 48px;
+}
+
+.t-56 {
+  font-size: 56px;
+}
+
+.t-64 {
+  font-size: 64px;
+}
+
+.t-72 {
+  font-size: 72px;
+}
+
+.t-80 {
+  font-size: 80px;
+}
+
+#file-upload {
+  display: none;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.display-none {
+  display: none;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-item {
+  flex-grow: 0;
+  margin: 0% 10%;
+}
+
+.homework {
+  border: 2px solid black;
+  width: 512px;
+}
+@media (max-width: 768px) {
+  .flex {
+    flex-direction: column;
+  }
+  .homework {
+    width: 400px;
+  }
+  .t-16 {
+    font-size: 12px;
+  }
+
+  .t-24 {
+    font-size: 16px;
+  }
+
+  .t-32 {
+    font-size: 24px;
+  }
+
+  .t-48 {
+    font-size: 32px;
+  }
+
+  .t-64 {
+    font-size: 40px;
+  }
+}
+
+.input-container {
+  background: url('./assets/input.png') no-repeat;
+  width: 840px;
+  height: 165px;
+}
+.input-container input {
+  height: 145px;
+  line-height: 28px; /*results in nice text vertical alignment*/
+  border: none;
+  background: transparent;
+  padding: 0 10px; /*don't start input text directly from the edge*/
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+input:-internal-autofill-selected {
+  background-color: transparent !important;
+}
+
+input {
+  font-family: 'copycat';
+  font-weight: bold;
+  font-size: 56px;
+  color: black !important;
+  padding-left: 20px !important;
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .select-button {
+    width: 220px;
+  }
+  .upload-button {
+    width: 120px;
+  }
+  .mobile-padding {
+    padding: 0px 40px;
+  }
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
